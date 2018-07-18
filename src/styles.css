@@ -29,7 +29,7 @@
 .personal-f-d-none:hover {
 	text-decoration: none
 }
-
+/* background */
 .personal-bg-n1 {
 	background-color: #287AB8
 }
@@ -42,6 +42,10 @@
 	background-color: #00233D
 }
 
+.personal-bg-white {
+	background-color: #00233D
+}
+/* color */
 .personal-c-n1 {
 	color: #287AB8
 }
@@ -50,7 +54,19 @@
 	color: #0F4D77
 }
 
-
 .personal-c-n3 {
 	color: #00233D
+}
+
+.personal-c-white {
+	color: #ffffff;
+}
+
+/* margin */
+.personal-m-0 {
+	margin: 0;
+}
+/* padding */
+.personal-p-0 {
+	padding: 0;
 }
