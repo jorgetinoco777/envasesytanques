@@ -70,3 +70,15 @@
 .personal-p-0 {
 	padding: 0;
 }
+
+/* Buttons */
+.personal-button-bg-n2 {
+	background-color: #287AB8;
+	color: white;
+}
+.personal-button-bg-n2:hover {
+	background-color: #0F4D77;
+}
+.personal-button-bg-n2:active {
+	background-color: #287AB8;
+}
