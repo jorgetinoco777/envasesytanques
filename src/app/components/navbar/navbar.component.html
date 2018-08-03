@@ -1,4 +1,47 @@
-<nav class="persona-navbar-f navbar navbar-expand-lg navbar-light bg-light shadow p-2 mb-5">
+<div class="container-fluid m-0 p-0">
+  <div class="row personal-m-0">
+    <div class="col-lg-4">
+      <div id="cntLogo" data-av-animation="fadeIn" class="aniview slow container-fluid persona-navbar-f" style="width: 100%">
+        <a class="navbar-brand m-2" routerLink="">
+          <img src="assets/img/logo_completo_original.png" width="300" height="auto" class="d-inline-block align-top">
+        </a>
+      </div>
+    </div>
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4">
+      Contáctanos: 
+      <div id="container">(+953) 967647864</div>
+    </div>
+  </div>
+  <!-- Menu -->
+  <div id="cntNavBar" data-av-animation="slideInTop" class="aniview fast container-fluid m-0 p-0" style="width: 100%">
+    <nav class="persona-navbar-f personal-f-s-md navbar navbar-expand-lg shadow p-0 m-0">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse personal-bg-n1 m-0 p-0" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item pl-1 pr-1" style="width: 30px">
+            <a id="itemLogo" data-av-animation="fadeIn" class="nav-link personal-c-white m-1 p-0" href="#categorias">
+              <img src="assets/img/logo_eyt_fb.ico" class="m-0 p-0" width="20" height="auto">
+            </a>
+          </li>
+          <li class="nav-item pr-3">
+            <a class="nav-link personal-c-white" href="#categorias">Categorías</a>
+          </li>
+          <li class="nav-item pr-3">
+            <a class="nav-link personal-c-white" href="#productos">Productos</a>
+          </li>
+          <li class="nav-item pr-3">
+            <a class="nav-link personal-c-white" [routerLink]="['sobre-nosotros']">Quienes Somos?</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<!-- <nav class="persona-navbar-f navbar navbar-expand-lg navbar-light bg-light shadow p-2 mb-5">
   <a class="navbar-brand personal-c-n2" routerLink="">
     <img src="assets/img/logo_completo_original.png" width="250" height="auto" class="d-inline-block align-top">
   </a>
@@ -6,7 +49,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <!-- Menu -->
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link" href="#categorias">Categorías</a>
@@ -14,6 +57,9 @@
       <li class="nav-item">
         <a class="nav-link" href="#productos">Productos</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['sobre-nosotros']">Quienes Somos?</a>
+      </li>
     </ul>
   </div>
-</nav>
+</nav> -->

@@ -14,7 +14,7 @@ const app_routes: Routes = [
 	// { path: 'categorias', component: CategoriesComponent },
 	// { path: 'categoria', component: CategoryComponent },
 	// { path: 'contacto', component: ContactsComponent },
-	// { path: 'sobre-nosotros', component: AboutComponent },
+	{ path: 'sobre-nosotros', component: AboutComponent },
 	{ path: '**', pathMatch: 'full', redirectTo: '' }
 ];
 

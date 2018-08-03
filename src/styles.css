@@ -1,9 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 .persona-navbar-f {
 	width: 100%;
+	z-index: 1;
+}
+
+.personal-navbar-scroll {
 	position: fixed;
 	top: 0;
-	z-index: 999999;
+	z-index: 9999999;
 }
 
 .personal-f-s-sm {
@@ -43,7 +47,7 @@
 }
 
 .personal-bg-white {
-	background-color: #00233D
+	background-color: #fff
 }
 /* color */
 .personal-c-n1 {
@@ -59,7 +63,7 @@
 }
 
 .personal-c-white {
-	color: #ffffff;
+	color: #fff;
 }
 
 /* margin */
@@ -81,4 +85,37 @@
 }
 .personal-button-bg-n2:active {
 	background-color: #287AB8;
+}
+
+.fast {
+    -vendor-animation-duration: 1s;
+    -vendor-animation-delay: 0s;
+}
+.slow {
+    -vendor-animation-duration: 3s;
+    -vendor-animation-delay: 1s;
+}
+.reallyslow {
+    -vendor-animation-duration: 6s;
+    -vendor-animation-delay: 3s;
+}
+
+#container{
+	color: #555;
+	font-size: 28px;
+	margin: 0 auto;
+	position:relative;
+	min-height: 40px;
+	
+	font-family:'Open Sans Condensed',sans-serif;
+	text-shadow:1px 1px 0 rgba(255,255,255,0.5);
+}
+
+#container:before{
+	/*content: ">";*/
+	font-size: 30px;
+	left: -40px;
+	opacity: 0.25;
+	position: absolute;
+	text-shadow: 1px 1px 0 white;
 }
