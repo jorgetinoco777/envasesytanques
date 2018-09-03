@@ -1,15 +1,20 @@
+// alert();
+// var begin = function() {
+//     var container = $("#container");
+//     container.shuffleLetters();
+// };
 var scrolling = false;
 var options = {
     animateThreshold: 50,
     // scrollPollInterval: 10
 };
-var container = $("#container");
-container.shuffleLetters();
-$(document).ready(function() {
-    $("#itemLogo").collapse('hide');
-    container.shuffleLetters();
+// var container = $("#container");
+// container.shuffleLetters();
+var begin = function() {
+    $("[name='ocultarDinamico']").collapse('hide');
+    // container.shuffleLetters();
     // console.log(container);
-});
+};
 $(window).scroll(function(event) {
     var scroll = $(window).scrollTop();
     // Do something
@@ -23,14 +28,14 @@ $(window).scroll(function(event) {
             });
             $("#cntNavBar").AniView(options);
         }
-        $("#itemLogo").collapse('show');
+        $("[name='ocultarDinamico']").collapse('show');
     } else if (scroll == 0) {
         if ($("#cntNavBar").hasClass("personal-navbar-scroll")) {
             $("#cntLogo").show();
             $("#cntLogo").AniView(options);
             $("#cntNavBar").removeClass("personal-navbar-scroll");
         }
-        $("#itemLogo").collapse('hide');
+        $("[name='ocultarDinamico']").collapse('hide');
         // $("#cntNavBar").css({
         //     'top': none
         // }, 200, function() {
@@ -39,9 +44,10 @@ $(window).scroll(function(event) {
         // });
     }
 });
-//     animateThreshold: 100,
+// animateThreshold: 100,
 //     scrollPollInterval: 12
 // }
 // var begin = function() {
 //     $("#cntNavBar").AniView(options);
-// };var options = {
+// };
+// var options = {

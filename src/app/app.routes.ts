@@ -2,19 +2,20 @@ import { RouterModule, Routes } from '@angular/router';
 
 //Components
 import { 
-	HomeComponent, 
-	CategoriesComponent, 
-	CategoryComponent, 
+	HomeComponent,
 	ContactsComponent,
-	AboutComponent
+	AboutComponent,
+	ProductsComponent,
+	ManagementComponent
 } from './components/index.pages';
 
 const app_routes: Routes = [
 	 { path: '', component: HomeComponent },
 	// { path: 'categorias', component: CategoriesComponent },
-	// { path: 'categoria', component: CategoryComponent },
-	// { path: 'contacto', component: ContactsComponent },
-	{ path: 'sobre-nosotros', component: AboutComponent },
+	{ path: 'productos', component: ProductsComponent },
+	{ path: 'contactenos', component: ContactsComponent },
+	{ path: 'quienes-somos', component: AboutComponent },
+	{ path: 'gestion-ambiental', component: ManagementComponent },
 	{ path: '**', pathMatch: 'full', redirectTo: '' }
 ];
 

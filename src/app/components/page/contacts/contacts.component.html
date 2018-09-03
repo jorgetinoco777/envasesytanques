@@ -1,3 +1,125 @@
-<p>
-  contacts works!
-</p>
+<div class="container mt-5">
+
+	<h4 class="text-uppercase personal-c-n1 mb-4">Contáctenos</h4>
+
+	<div class="row">
+		<div class="col-lg-6">
+			<h5 class="text-uppercase mb-4">Envases y Tanques</h5>
+			<p class="personal-f-s-md personal-c-n3 mb-4">
+				Servicios ambientales, gestión de residuos, mantenimiento y venta de envases y tanques.
+			</p>
+			<p><i class="fas fa-phone personal-c-n1"></i> 2 470 306 <span class="personal-c-n2 personal-f-s-sm">(desde Quito)</span></p>
+			<p><i class="fas fa-phone personal-c-n1"></i> 022 470 306 <span class="personal-c-n2 personal-f-s-sm"> (Cualquier parte del país)</span></p>
+			<p><i class="fas fa-mobile personal-c-n1"></i> (+593) 9 6764 7864</p>
+			<h6 class="mt-5 mb-3 ml-3">Para consultas y cotizaciones</h6>
+			<p><i class="fas fa-globe personal-c-n1"></i> www.envasesytanques.com</p>
+			<p><i class="fas fa-at personal-c-n1"></i> envasesytanques@hotmail.com</p>
+			<p><i class="fas fa-home personal-c-n1"></i> Francisco Londoño Oe1-174 y Pedro de Alfaro, Quito - Ecuador</p>
+		</div>
+		<!-- fas fa-phone -->
+		<!-- Formulario -->
+		<div class="col-lg-6" *ngIf="!message">
+			<p class="personal-f-s-sm personal-c-n3">Envíenos sus consultas y pedidos a través de nuestro formulario de consultas, lo atenderemos a la brevedad posible.</p>
+			{{ message }}
+			<!-- <form> -->
+			  <div class="form-row">
+			    <div class="form-group col-md-12">
+			    	<input type="text" class="form-control form-control-sm" id="inEmpresa" placeholder="Empresa">
+			    </div>
+			    <div class="form-group col-md-12">
+			    	<input type="text" class="form-control form-control-sm" id="inNombres" placeholder="(*) Nombre y Apellido">
+			    </div>
+			    <div class="form-group col-md-12">
+			    	<input type="text" class="form-control form-control-sm" id="inTelefono" placeholder="(*) Telefono">
+			  	</div>
+			  	<div class="form-group col-md-12">
+					<input type="text" class="form-control form-control-sm" id="inCorreo" placeholder="(*) Correo">
+				</div>
+				<div class="form-group col-md-12">
+					<textarea class="form-control form-control-sm" id="inMensaje" rows="3" placeholder="(*) Escriba su mensaje..."></textarea>
+				</div>
+			  </div>
+			  <div class="form-group col-md-12">
+			  	<p class="personal-f-s-sm text-danger text-right">Datos obligatorios (*)</p>
+			  </div>
+			  <button (click)="sendMessage()" class="btn btn-success pl-5 pr-5"><i class="fas fa-envelope"></i> Enviar</button>
+			<!-- </form> -->
+		</div>
+
+		<div class="col-lg-6 p-5 bg-light border border-secondary rounded" *ngIf="message">
+			<h3 class="mt-5 mb-5"><i class="fas fa-check-circle text-success"></i> Correo enviado exitosamente!</h3>
+			<h6> Gracias por escribirnos, responderemos tu correo lo más pronto posible.</h6>
+		</div>
+
+	</div>
+	
+	<!-- <div class="row mt-5">
+		<div class="col-md-2">
+			<img src="assets/img/logo_base.png" alt="..." class="img-thumbnail">
+		</div>
+		<div class="col-md-10">
+			<h6>Envases y Tanques</h6>
+			<hr>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur soluta commodi ipsam provident ex obcaecati nulla facere harum tenetur qui accusantium saepe in perspiciatis dolores recusandae, ipsa eligendi, excepturi quisquam!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur soluta commodi ipsam provident ex obcaecati nulla facere harum tenetur qui accusantium saepe in perspiciatis dolores recusandae, ipsa eligendi, excepturi quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur soluta commodi ipsam provident ex obcaecati nulla facere harum tenetur qui accusantium saepe in perspiciatis dolores recusandae, ipsa eligendi, excepturi quisquam!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur soluta commodi ipsam provident ex obcaecati nulla facere harum tenetur qui accusantium saepe in perspiciatis dolores recusandae, ipsa eligendi, excepturi quisquam!</p>
+		</div>
+	</div> -->
+
+	<!-- <div class="row">
+		<div class="col-md-12">
+			
+			<h6>Equipo de trabajo</h6>
+			<hr>
+
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6">
+
+			<div class="card" style="width: 16rem; margin: 0 auto">
+				<img class="card-img-top rounded" src="assets/img/team/mario-solis.jpg" alt="Card image cap">
+				<div class="card-body personal-c-n2">
+					<h6>Mario Solis</h6>
+					<p class="personal-f-s-sm personal-c-n3">Ejecutivo de Ventas</p>
+					<p class="personal-f-s-sm"><i class="fas fa-phone"></i> (+953) 967647444</p>
+					<p class="personal-f-s-sm"><i class="fas fa-phone"></i> (+953) 967647333</p>
+					<p class="personal-f-s-sm"><i class="fas fa-envelope"></i> envasesytanques@hotmail.com</p>
+				</div>
+			</div>
+
+		</div>
+		<div class="col-md-6">
+
+			<div class="card" style="width: 16rem; margin: 0 auto">
+				<img class="card-img-top rounded" src="assets/img/team/mario-solis.jpg" alt="Card image cap">
+				<div class="card-body personal-c-n2">
+					<h6>Mario Solis</h6>
+					<p class="personal-f-s-sm personal-c-n3">Ejecutivo de Ventas</p>
+					<p class="personal-f-s-sm"><i class="fas fa-phone"></i> (+953) 967-647444</p>
+					<p class="personal-f-s-sm"><i class="fas fa-phone"></i> (+953) 967647333</p>
+					<p class="personal-f-s-sm"><i class="fas fa-envelope"></i> envasesytanques@hotmail.com</p>
+				</div>
+			</div>
+			
+			<hr>
+			
+			
+
+		</div>
+	</div>
+
+	<div class="row mt-5">
+		<div class="col-md-12">
+			
+			<h6>Ubícanos</h6>
+
+			<hr>
+
+			<p><i class="fas fa-map-marker-alt"></i> Av. Simón Bolivar Km 12 1/2 y entrada norte.</p>
+
+		</div>
+	</div> -->
+
+</div>

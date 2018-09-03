@@ -9,10 +9,10 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/page/home/home.component';
-import { CategoryComponent } from './components/page/category/category.component';
 import { ContactsComponent } from './components/page/contacts/contacts.component';
-import { CategoriesComponent } from './components/page/categories/categories.component';
 import { AboutComponent } from './components/page/about/about.component';
+import { ProductsComponent } from './components/page/products/products.component';
+import { ManagementComponent } from './components/page/management/management.component';
 
 @NgModule({
   declarations: [
@@ -20,10 +20,10 @@ import { AboutComponent } from './components/page/about/about.component';
     NavbarComponent,
     FooterComponent,
     HomeComponent,
-    CategoryComponent,
     ContactsComponent,
-    CategoriesComponent,
-    AboutComponent
+    AboutComponent,
+    ProductsComponent,
+    ManagementComponent
   ],
   imports: [
     BrowserModule,
